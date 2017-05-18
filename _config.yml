@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gobluebro's Github Page - powered by Jykll
+title: Gobluebro's Github Page
 email: gtrain@cinci.rr.com
 description: > # this means to ignore newlines until "baseurl:"
   Gobluebro's Github Page. Currently a work in progress. Just trying to continue
