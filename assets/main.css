@@ -1,0 +1,122 @@
+body, html {
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width:100%;
+  height:100%;
+  background-color:#DFDFDF;
+  display:flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle {
+  display: inline-block;
+  position: relative;
+}
+
+.circlepic{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.belowmiddle {
+  flex-direction: row;
+}
+
+.margin-inside {
+  margin: 20px;
+  margin-top: 2px;
+}
+
+.margin-outside {
+  position: relative;
+  margin: 10px;
+  top: -25px;
+}
+
+a {
+  opacity: 0;
+  text-decoration: none;
+  color: #111111;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0074D9;
+}
+
+.mail {
+  display: inline-block;
+  animation-name: mailslidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.linkedin {
+  display: inline-block;
+  animation-delay: 0.5s;
+  animation-name: linkedinslidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.resume {
+  display: inline-block;
+  animation-delay: 1s;
+  animation-name: resumeslidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.github {
+  display: inline-block;
+  animation-delay: 1.5s;
+  animation-name: githubslidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mailslidein {
+  0%{
+    transform: translate(-40px, -60px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes linkedinslidein {
+  0%{
+    transform: translate(-65px, -23px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes resumeslidein {
+  0%{
+    transform: translate(-70px, 0px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes githubslidein {
+  0%{
+    transform: translate(-62px, 25px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
