@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "fontello";
+  src: url("../font/fontello.eot?32777203");
+  src: url("../font/fontello.eot?32777203#iefix") format("embedded-opentype"),
+    url("../font/fontello.woff2?32777203") format("woff2"),
+    url("../font/fontello.woff?32777203") format("woff"),
+    url("../font/fontello.ttf?32777203") format("truetype"),
+    url("../font/fontello.svg?32777203#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200%;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin: 0;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-circled::before {
+  content: "\f09b";
+  transform: rotate(325deg);
+  font-size: 245%;
+}
+.icon-mail-alt::before {
+  content: "\f0e0";
+  transform: rotate(35deg);
+}
+.icon-doc-text-inv::before {
+  content: "\f15c";
+  transform: rotate(350deg);
+}
+.icon-linkedin-squared::before {
+  content: "\f30c";
+  transform: rotate(10deg);
+  font-size: 225%;
+}
+
+i:hover {
+  color: #0074d9;
+}
