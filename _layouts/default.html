@@ -20,13 +20,149 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#aaaaaa">
 
-  <link rel="stylesheet" href="/assets/css/bundle.css" media="none" onload="if(media!='all')media='all'">
-
 </head>
 
 <body style="height: 100%; margin: 0; padding: 0;">
-  <link href="/assets/css/index.min.css" rel="stylesheet" type="text/css">
-  <link href="/assets/css/fontello.min.css" rel="stylesheet" type="text/css">
+  <style>
+    @font-face {
+      font-family: fontello;
+      src: url(../font/fontello.eot?32777203);
+      src: url(../font/fontello.eot?32777203#iefix) format("embedded-opentype"), url(../font/fontello.woff2?32777203) format("woff2"), url(../font/fontello.woff?32777203) format("woff"), url(../font/fontello.ttf?32777203) format("truetype"), url(../font/fontello.svg?32777203#fontello) format("svg");
+      font-weight: 400;
+      font-style: normal
+    }
+
+    [class*=" icon-"]::before,
+    [class^=icon-]::before {
+      font-family: fontello;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 200%;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin: 0;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .icon-github-circled::before {
+      content: "\f09b";
+      transform: rotate(325deg);
+      font-size: 245%
+    }
+
+    .icon-mail-alt::before {
+      content: "\f0e0";
+      transform: rotate(35deg)
+    }
+
+    .icon-doc-text-inv::before {
+      content: "\f15c";
+      transform: rotate(350deg)
+    }
+
+    .icon-linkedin-squared::before {
+      content: "\f30c";
+      transform: rotate(10deg);
+      font-size: 225%
+    }
+
+    i:hover {
+      color: #0074d9
+    }
+
+    .margin-outside,
+    .middle {
+      position: relative
+    }
+
+    .github,
+    .linkedin,
+    .mail,
+    .middle,
+    .resume {
+      display: inline-block
+    }
+
+    .margin-inside {
+      margin: 2px 20px 20px
+    }
+
+    .margin-outside {
+      margin: 10px;
+      top: -25px
+    }
+
+    a {
+      opacity: 0
+    }
+
+    a:hover {
+      text-decoration: none
+    }
+
+    .mail {
+      animation: mailslidein 1s 1 forwards
+    }
+
+    .linkedin {
+      animation: linkedinslidein 1s .5s 1 forwards
+    }
+
+    .resume {
+      animation: resumeslidein 1s 1s 1 forwards
+    }
+
+    .github {
+      animation: githubslidein 1s 1.5s 1 forwards
+    }
+
+    @keyframes mailslidein {
+      0% {
+        transform: translate(-40px, -60px);
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+    @keyframes linkedinslidein {
+      0% {
+        transform: translate(-65px, -23px);
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+    @keyframes resumeslidein {
+      0% {
+        transform: translate(-70px, 0);
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+    @keyframes githubslidein {
+      0% {
+        transform: translate(-62px, 25px);
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+  </style>
   <main role="main" class="container" style="width: 100%; height: 100%; background-color: #dfdfdf; display: flex; justify-content: center; align-items: center;   flex-direction: column;">
     <div class="middle">
       <div>
