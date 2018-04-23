@@ -8,3 +8,4 @@ package.json
 yarn.lock
 webpack.config.js
 assets/webpack*
+audits/*
