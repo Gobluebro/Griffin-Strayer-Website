@@ -1,4 +1,4 @@
-# griffinstrayer.com
+# [griffinstrayer.com](https://griffinstrayer.com)
 
 A Portfolio Website of myself to show off my professional experience.
 
@@ -36,6 +36,6 @@ VSCode
 
 #### Thanks to:
 
-Fontawesome / Fontello for the icons.
+[Fontawesome](https://fontawesome.com/) / [Fontello for the icons.](http://fontello.com/)
 
-realfavicongenerator.net for the wide support of favicons.
+[realfavicongenerator.net](https://realfavicongenerator.net/) for the wide support of favicons.
